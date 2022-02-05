@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Button from '@/ui-kit/Button';
 
 function App() {
   useEffect(() => {
@@ -6,7 +7,9 @@ function App() {
   }, []);
   return (
     <div>
-      ui kpop
+      <Button>
+        ui kpop
+      </Button>
     </div>
   );
 }
