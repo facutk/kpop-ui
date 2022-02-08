@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import ToUpper from './ToUpper';
+import Header from '@/components/Header';
+import ToUpper from '@/pages/ToUpper';
+import Home from '@/pages/Home';
 
-function App() {
-  useEffect(() => {
-    fetch('https://kpop.dokku.facu.tk/json').then(r => r.json()).then(console.log);
-  }, []);
-
-  return (
-    <div>
-      <ToUpper />
-    </div>
-  );
-}
+const App = () => (
+  <HashRouter>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="toupper" element={<ToUpper />} />
+    </Routes>
+  </HashRouter>
+);
 
 export default App;
