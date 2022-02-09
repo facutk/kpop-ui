@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
+import Image from '@/ui-kit/Image';
+import { Title, Wrapper } from './Logo.styles';
 
 const Header = () => (
   <Link to="/">
-    <img src={process.env.PUBLIC_URL + '/logo192.png'} alt="logo" width={32} />
-    KPOP
+    <Wrapper>
+      <Image src={process.env.PUBLIC_URL + '/logo192.png'} alt="logo" htmlWidth={32} />
+      <Title>KPOP</Title>
+    </Wrapper>
   </Link>
 );
 

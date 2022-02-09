@@ -1,3 +1,3 @@
-import { Input as ChackraButton } from '@chakra-ui/react';
+import { Input as ChackraInput } from '@chakra-ui/react';
 
-export default ChackraButton;
+export default ChackraInput;

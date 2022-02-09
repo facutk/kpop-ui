@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  border-bottom: 1px solid #fafafa;
-  padding: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-right: 1em;
+`;
+
+export const Title = styled.span`
+  margin-left: 0.5em;
+  font-size: 1.25em;
 `;
